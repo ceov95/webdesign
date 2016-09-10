@@ -1,0 +1,108 @@
+@import "compass/css3";
+
+@import url(http://fonts.googleapis.com/css?family=Raleway:100,400,700);
+@import url(http://fonts.googleapis.com/css?family=Pacifico);
+
+body{
+	background: url(http://www.elobservadoreconomico.com/files/articulo/1277755972_ONArtesanias16.JPG);
+	background-repeat:no-repeat;
+	background-size: cover;
+	background-attachment: fixed;
+	font-family:Raleway, Open Sans, Droid Sans, Roboto,arial, sans-serif;
+}
+.blurred-bg{
+
+	background: black;
+	opacity: 0.6;
+	background-repeat:no-repeat;
+	background-attachment: fixed;
+}
+
+.box{
+	width:500px;
+	height:300px;
+  	left:-webkit-calc( 50% - 250px );
+  	top:20%;
+	position:absolute;
+	border-radius:5px;
+	border:1px solid rgba(0,0,0,.3);
+	padding:20px;
+	text-align: center;
+	text-shadow:0 1px 1px rgba(0,0,0,.4);  
+  	.content{
+    margin: auto;
+  }
+}
+
+h1,h2,a,p{
+	color:white;
+	font-weight:500;
+	padding-left: 15px;
+  
+	.tinted &{
+		color:white;
+		text-shadow:0 1px 1px rgba(255,255,255,.1);
+	}
+}
+h2{ font-size: 18px }
+p{ 
+  margin: 40px;
+  &.related{
+    text-transform: uppercase;
+    font-weight: 700;
+    color: #444;
+    
+    a{
+      font-weight: 700;
+      text-decoration: none;
+      &:hover{
+        text-decoration: underline;
+      }
+    }
+  }
+}
+
+.animate
+{
+	transition: all 0.1s;
+	-webkit-transition: all 0.1s;
+}
+
+.action-button
+{
+	position: relative;
+	padding: 10px 40px;
+  margin: 10px 10px 10px 10px;
+  float: left;
+	border-radius: 10px;
+	font-family: 'Pacifico', cursive;
+	font-size: 20px;
+	color: #FFF;
+	text-decoration: none;	
+}
+
+.green
+{
+	background-color: #82BF56;
+	border-bottom: 5px solid #669644;
+	text-shadow: 0px -2px #669644;
+}
+.action-button:active
+{
+	transform: translate(0px,5px);
+  -webkit-transform: translate(0px,5px);
+	border-bottom: 1px solid;
+}
+.blue
+{
+	background-color: #3498DB;
+	border-bottom: 5px solid #2980B9;
+	text-shadow: 0px -2px #2980B9;
+}
+.red
+{
+	background-color: #E74C3C;
+	border-bottom: 5px solid #BD3E31;
+	text-shadow: 0px -2px #BD3E31;
+}
+
